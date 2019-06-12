@@ -1,12 +1,22 @@
+import './assets/global.scss';
+
 import React, { Component } from 'react';
 import ReactDom from 'react-dom';
+
+import { ImageBox } from './components/ImageBox/ImageBox';
+import { pictures } from './pictures';
+
 
 class App extends Component {
     render() {
         return (
-            <div>
-                Hello world!!!
-            </div>
+            <main>
+                <div className="container">
+                    <div className="gallery">
+                        {pictures.map((picture, idx) => <ImageBox key={idx} {...picture} />)}
+                    </div>
+                </div>
+            </main>
         );
     }
 }
