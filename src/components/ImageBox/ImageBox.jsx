@@ -1,6 +1,7 @@
 import './ImageBox.scss';
 
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import { Comments } from './../Comments';
 import { Likes } from './../Likes';
@@ -13,7 +14,6 @@ export class ImageBox extends Component {
                 <img src={image} className="gallery-image" alt=""/>
                 <div className="gallery-item-info">
                     <ul>
-                        {/* <li className="gallery-item-likes"><span className="visually-hidden">Likes:</span><i className="fas fa-heart" aria-hidden="true"></i> {likes} </li> */}
                         <Likes likes={likes}/>
                         <Comments comments={comments}/>
                     </ul>
@@ -21,4 +21,10 @@ export class ImageBox extends Component {
             </div>
         )
     }
+}
+
+ImageBox.propTypes = {
+    likes: PropTypes.number,
+    comments: PropTypes.number,
+    image: PropTypes.string,
 }
