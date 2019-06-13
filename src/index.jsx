@@ -3,8 +3,10 @@ import './assets/global.scss';
 import React, { Component } from 'react';
 import ReactDom from 'react-dom';
 
-import { ImageBox } from './components/ImageBox/ImageBox';
-import { pictures } from './pictures';
+import { Gallery } from './components/Gallery';
+import { Likes } from './components/Likes';
+import { Comments } from './components/Comments';
+
 
 
 class App extends Component {
@@ -12,9 +14,7 @@ class App extends Component {
         return (
             <main>
                 <div className="container">
-                    <div className="gallery">
-                        {pictures.map((picture, idx) => <ImageBox key={idx} {...picture} />)}
-                    </div>
+                    <Gallery/>
                 </div>
             </main>
         );
