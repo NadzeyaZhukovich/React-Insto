@@ -1,6 +1,7 @@
 import './ProfilePhoto.scss';
 
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 export class ProfilePhoto extends Component {
     render() {
@@ -12,4 +13,8 @@ export class ProfilePhoto extends Component {
             </div>
         )
     }
+}
+
+ProfilePhoto.PropTypes = {
+    photo: PropTypes.string,
 }
