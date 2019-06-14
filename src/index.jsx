@@ -3,16 +3,16 @@ import './assets/global.scss';
 import React, { Component } from 'react';
 import ReactDom from 'react-dom';
 
+import { ProfileInfo } from './components/ProfileInfo';
 import { Gallery } from './components/Gallery';
-import { Likes } from './components/Likes';
-import { Comments } from './components/Comments';
-
-
 
 class App extends Component {
     render() {
         return (
             <main>
+                <div className="container">
+                    <ProfileInfo/>
+                </div>
                 <div className="container">
                     <Gallery/>
                 </div>
