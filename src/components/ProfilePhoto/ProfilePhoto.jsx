@@ -15,6 +15,6 @@ export class ProfilePhoto extends Component {
     }
 }
 
-ProfilePhoto.PropTypes = {
+ProfilePhoto.propTypes = {
     photo: PropTypes.string,
 }
