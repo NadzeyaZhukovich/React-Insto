@@ -9,7 +9,7 @@ export const pictures = [
         image: 'https://images.unsplash.com/photo-1497445462247-4330a224fdb1?w=500&h=500&fit=crop',
         likes: 89,
         comments: 5,
-        contentType: 'picture',
+        contentType: 'pictures',
     },
     {
         image: 'https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=500&h=500&fit=crop',

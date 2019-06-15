@@ -1,4 +1,4 @@
-import './VideoBox.scss';
+import './MultipleImageBox';
 
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
@@ -7,14 +7,14 @@ import { Comments } from './../Comments';
 import { Likes } from './../Likes';
 import { Icon } from './../Icon';
 
-export class VideoBox extends Component {
+export class MultipleImageBox extends Component {
     render() {
-        const videoIcon = 'fas fa-video';
+        const multipleImageBox = 'fas fa-clone';
         const { image, likes, comments } = this.props;
         return (
             <div className="gallery-item" tabIndex="0">
                 <img src={image} className="gallery-image" alt=""/>
-                <Icon icon={videoIcon}/>
+                <Icon icon={multipleImageBox}/>
                 <div className="gallery-item-info">
                     <ul>
                         <Likes likes={likes}/>
@@ -26,7 +26,7 @@ export class VideoBox extends Component {
     }
 }
 
-VideoBox.propTypes = {
+MultipleImageBox.propTypes = {
     likes: PropTypes.number,
     comments: PropTypes.number,
     image: PropTypes.string,
